@@ -144,7 +144,7 @@ if [ ${BALANCER_MANAGER_ROUTE} ] ; then
              {
                  if ( $6 == ROUTE ) {
                       find=1
-                      if ( $14 == "Ok" ) {
+                      if ( $14 == "Init Ok " ) {
                           printf("echo AJP OK - Worker URL: %s, Route: %s, State: %s && exit ${STATE_OK}", $3, $6, $14)
                       } else if ( $14 ~ "Err" ) {
                           printf("echo AJP CRITICAL - Worker URL: %s, Route: %s, State: %s && exit ${STATE_CRITICAL}", $3, $6, $14)
@@ -161,7 +161,7 @@ else
         | /bin/awk '
             BEGIN { FS=";" }
             {
-                if ( $14 == "Ok" ) {
+                if ( $14 == "Init Ok " ) {
                     printf("OK;%s;%s;%s\n", $3, $6, $14)
                 } else if ( $14 ~ "Err" ) {
                     printf("CRITICAL;%s;%s;%s\n", $3, $6, $14)

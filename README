@@ -4,7 +4,8 @@
    +===============================+
 
         Author     : ONA Guillaume (guillaume dot ona at gmail dot com)
-        License    : GPL - http://www.gnu.org/licenses/
+        Branched	 : Matthew Schmitt (matt at abnerpeacock dot net)
+				License    : GPL - http://www.gnu.org/licenses/
 
     ****************************************************************************
     * This program is free software: you can redistribute it and/or modify     *
@@ -34,6 +35,7 @@
         - ksh
         - wget
         - curl
+				- httpd 2.2.3-65
 
     c) Usage
 
